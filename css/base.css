@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "goldman-regular";
+  src: url("../fonts/Goldman-Regular.ttf");
+}
+
+body {
+  background-color: #fff;
+  font-family: "goldman-regular";
+  color: #aaa;
+}
+
+.header {
+  background-color: #F3D94E;
+  color: #000;
+  padding-bottom: 20px;
+  text-align: center;
+  display: flex;
+  border-bottom: 5px solid #000;
+}
+
+.header img {
+  padding-top: 20px;
+  max-height: 100px;
+}
+
+.header h1 {
+  font-size: 1.6em;
+  padding-top: 40px;
+}
+
+.row {
+  position: relative;
+  margin: 30px 0px 10px 0px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 10px 10px 5px 0px #d6cfd6;
+}
+
+.row .title {
+  position: absolute;
+  top: -29px;
+  left: 0;
+  width: 100%;
+  background: #000;
+  height: 25px;
+  max-width: 90%;
+  border-radius: 5px;
+  /*z-index:-99;*/
+}
+
+.row .title h1 {
+  color: #fff;
+  padding: 2px 10px 0px 10px;
+  font-size: 1em;
+}
+
+.row [class^='col-'].right {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: .6em;
+  background: #eee;
+  min-height: 100px;
+  padding-top: 10px;
+  margin-top: 10px;
+  overflow-y: auto;
+}
+
+.row [class^='col-'].right .marked {
+  color: red;
+}
+
+.row [class^='col-'].left {
+  display: table;
+  font-size: .7em;
+  padding-top: 10px;
+}
+
+.row [class^='col-'].left label {
+  display: flex;
+}
+
+.row [class^='col-'].left input {
+  margin-left: 10px;
+  width: 100%;
+  border: 0px;
+  border-bottom: 1px solid #ccc;
+}
+
+.row .description {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: .6em;
+  color: #333;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.row .send {
+  padding-top: 10px;
+}
+
+.btn-primary {
+  background-color: #F3D94E;
+  color: #000;
+  border-color: #000;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn-primary:focus {
+  background-color: #e0c84e;
+  color: #000;
+}
+
+.footer-dashed {
+  margin-top: 5px;
+  border: 1px dashed #ccc;
+}
+
+.footer-dotted {
+  margin-top: 5px;
+  border: 1px dotted #ccc;
+}
+
+.footer-solid {
+  margin-top: 5px;
+  border: 1px solid #ccc;
+}
